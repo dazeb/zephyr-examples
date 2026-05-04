@@ -1,5 +1,6 @@
 interface AppValidation {
   uniqueText: string[];
+  required?: boolean;
 }
 
 // App-specific validation rules with unique content to verify correct deployment
@@ -191,6 +192,14 @@ export const APP_VALIDATIONS: Record<string, AppValidation> = {
   },
   "mf-react-rsbuild-provider": {
     uniqueText: ["Basic Host-Remote", "Provider button"],
+  },
+  "angular-rsbuild-host": {
+    uniqueText: ["Angular + Rsbuild", "Remote loaded by the host"],
+    required: true,
+  },
+  "angular-rsbuild-remote": {
+    uniqueText: ["Federated starter card", "angular_rsbuild_remote"],
+    required: true,
   },
   // TODO: pending checks for deployment
   // Snapshot assets have incorrect pathing

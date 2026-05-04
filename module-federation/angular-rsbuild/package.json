@@ -1,0 +1,15 @@
+{
+  "name": "mf-angular-rsbuild",
+  "version": "1.0.0",
+  "description": "Angular Module Federation example with Rsbuild and Zephyr",
+  "private": true,
+  "scripts": {
+    "build": "pnpm build-remote && pnpm build-host",
+    "build-host": "pnpm --filter=angular_rsbuild_host build",
+    "build-remote": "pnpm --filter=angular_rsbuild_remote build",
+    "dev": "pnpm --filter=angular_rsbuild_remote dev & pnpm --filter=angular_rsbuild_host dev"
+  },
+  "keywords": ["angular", "rsbuild", "module-federation", "zephyr"],
+  "author": "",
+  "license": "MIT"
+}

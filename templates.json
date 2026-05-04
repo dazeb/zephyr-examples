@@ -72,6 +72,19 @@
     "path": "module-federation/airbnb-clone"
   },
   {
+    "name": "Angular + Rsbuild Module Federation",
+    "slug": "module-federation/angular-rsbuild",
+    "description": "Angular micro-frontends using Rsbuild Module Federation, deployed with Zephyr Cloud",
+    "framework": "angular",
+    "bundler": "rsbuild",
+    "features": [
+      "module-federation",
+      "typescript"
+    ],
+    "complexity": "intermediate",
+    "path": "module-federation/angular-rsbuild"
+  },
+  {
     "name": "Angular + Vite Module Federation",
     "slug": "module-federation/angular-vite",
     "description": "Angular micro-frontends using Vite Module Federation, deployed with Zephyr Cloud",
